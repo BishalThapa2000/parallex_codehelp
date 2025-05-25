@@ -1,0 +1,125 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.wrapper{
+    height: 100vh;  
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+    
+}
+
+.container{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    z-index: -1;
+    
+    
+}
+
+
+
+.background{
+    transform: translateZ(-40px) scale(5);
+    
+}
+.foreground{
+    transform: translateZ(-20px) translateX(-20%) translateY(30%) scale(2.5);
+    
+
+}
+
+.background, .foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+h1{
+    position: absolute;
+    color: aliceblue;
+    top: 10rem;
+    font-size: 8rem;
+    letter-spacing: 4px;
+    text-shadow: 0 0 40px black;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', Impact; */
+    transform: translateZ(-15px) scale(2);
+         
+}
+
+section{
+    background-color: rgb(45,45,45);
+    padding: 5rem 0;
+    color: aliceblue;
+    
+    
+}
+
+#sectitle{
+    font-size: 5rem;
+    padding: 0 10rem;
+}
+
+
+
+.text{
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+
+.bg{
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    
+    
+}
+
+
+.bg1{
+    background-image: url(s1.jpg);
+    
+}
+
+.bg2{
+    background-image: url(s2.jpg);
+}
+
+.bg3{
+    background-image: url(s3.jpg);
+}
+
+.headings{
+    position: absolute;
+    background-color: white;
+    padding: 0.5rem 2.5rem;
+    top :40%;
+    left: 40%;
+    
+   /* transform: translateX(120%) translateY(150%); */
+   
+     color: black;
+    font-size: 4rem;
+    font-weight: 600px; 
+}
+
+
+
